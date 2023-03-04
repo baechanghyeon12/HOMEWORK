@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="/" method="past">
+        <label for="test1">
+            <p>id</p>
+        </label>
+        <p><input type="text" id="test1"><br /></p>
+
+        <label for="test2">
+            <p>pw</p>
+        </label>
+        <p><input type="password" id="test2"><br /></p>
+
+        <input type="submit">
+    </form>
+
+    <h2>button</h2>
+    <input type="button" value="클릭" onclick="alert('안녕')">
+
+    <h2>checkbox</h2>
+    <input type="checkbox" name="f1" value="apple" checked> 사과 <br />
+    <input type="checkbox" name="f2" value="grape"> 포도 <br />
+    <input type="checkbox" name="f3" value="peach"> 복숭아 <br />
+
+    <h2>radio</h2>
+    <input type="radio" name="r1" value="apple" checked> 사과 <br />
+    <input type="radio" name="r1" value="grape"> 포도 <br />
+    <input type="radio" name="r1" value="peach"> 복숭아 <br />
+
+    <h3>color</h3>
+    <input type="color" name="mycolor">
+
+    <h3>date</h3>
+    <input type="date" name="birthday">
+
+    <h3>email</h3>
+    <input type="email" pattern=".+@+.com" name="useremail">
+
+    <h3>file</h3>
+    <input type="file" name="myfile">
+
+    <h3>hidden</h3>
+    <input type="hidden" name="country" value="Norway">
+
+    <h3>image</h3>
+    <input type="image" src="./img/icon3.png" width="50px" alt="버튼이미지">
+
+    <h3>month</h3>
+    <input type="month" name="birthdaymonth">
+
+    <h3>number</h3>
+    <input type="number" name="quantity" min="2" max="10" step="2" value="2">
+
+    <h3>range</h3>
+    <input type="range" name="points" min="0" max="10" step="1" value="5">
+
+    <h3>reset</h3>
+    <input type="reset">
+
+    <h3>search</h3>
+    <input type="search" name="googlesearch">
+
+    <h3>button</h3>
+    <button type="submit">전송</button>
+
+    <h3>textarea</h3>
+    <textarea name="message" rows="5" cols="30" placeholder="내용을 입력하세요."></textarea>
+
+    <fieldset>
+        <legend>로그인</legend>
+        id : <input type="text"><br>
+        pw : <input type="password">
+    </fieldset>
+    <p>내용없음</p>
+    <p>내용없음</p>
+    <p>내용없음</p>
+    <p>내용없음</p>
+</body>
+
+</html>

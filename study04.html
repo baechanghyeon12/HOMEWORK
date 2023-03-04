@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        dl>* {
+            padding: 10px;
+            border: 1px solid lightcoral;
+        }
+
+        dl>*>* {
+            padding: 10px;
+            border: 1px solid lightgreen;
+        }
+
+        figure,
+        figure>* {
+            padding: 10px;
+            border: 1px solid lightgreen;
+        }
+
+        img {
+            border-color: red;
+        }
+
+        .test>* {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <blockquote cite="http://www.huxley.net/bnw/four.html">
+        <p>Words can be like X-rays, if you use them properly–they'll go through anything. You read and you're pierced.</p>
+    </blockquote>
+    <div class="test">
+        <p>CSS로 글자 색을<br> 바꿔봅시다</p>
+        <pre>
+            body{color:red}
+            내용추가
+        </pre>
+    </div>
+    <figure>
+        <figcaption>
+            나비에 관한 설명입니다.
+        </figcaption>
+        <img src="./img/img1.jpg" alt="나비" width="50%" />
+    </figure>
+    <hr />
+    <!-- dl는 정의형 목록의 집합 -->
+    <!-- dt는 용어의 이름 -->
+    <!-- dd는 용어의 설명 -->
+    <dl>
+        <!-- 여러 개의 용어와 하나의 정의도 가능하구요 -->
+        <!-- 또한 하나의 용어와 여러개의 정의도 가능합니다 -->
+        <!-- 여러개의 용어와 여러개의 정이도 가능합니다 -->
+        <div>
+            <dt>Firefox</dt>
+            <dd>Mozilla 재단과 수 백명의
+                자원봉사자가 개발한 무료
+                오픈소스 크로스 플랫폼
+                그래픽 웹 브라우저.</dd>
+            <dd>Mozilla 재단과 수 백명의
+                자원봉사자가 개발한 무료
+                오픈소스 크로스 플랫폼
+                그래픽 웹 브라우저.</dd>
+        </div>
+        <div>
+            <dt>Mozilla Firefox</dt>
+            <dd>
+                붉은 판다, 레서 판다, 랫서 판다,
+                혹은 "Firefox"는 초식성 포유류이다.
+                몸 길이는 애완용 고양이보다 약간
+                큰 정도인 60cm다.</dd>
+        </div>
+    </dl>
+</body>
+
+</html>

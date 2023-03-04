@@ -1,0 +1,41 @@
+body{
+    border: 1px solid red;
+}
+.box1 {
+    background-color: lightblue;
+    font-size: 2em;
+    width: 200px;
+    /* height: 200px; */
+    /* max-width: 800px;
+    min-width: 300px; */
+    /* overflow: hidden; */
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+    /* overflow: scroll; */
+}
+.box1_1{
+    width: 300px;
+    height: 100%;
+    border: 1px solid lightcoral;
+}
+.box2{
+    border: 1px solid lightblue;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+div {
+    border: 1px solid;
+}
+.box3 {width: 200px;}
+.box4 {width: 50% ; height: 100%;}
+.box5 {width: 50vw; height: 30vw;}
+
+.box5 p {
+    border: 1px solid lightgreen;
+}
+
+.c_3{
+    height: 30%;
+}

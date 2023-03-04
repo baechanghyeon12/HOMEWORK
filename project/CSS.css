@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    display: inline;
+}
+.header {
+    border: 10px solid red;
+}
+
+#menu:hover ol {
+    display:contents;
+}
+li {
+    box-sizing: border-box;
+}
