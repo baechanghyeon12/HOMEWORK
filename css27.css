@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cards {
+    padding: 20px;
+}
+.card {
+    width: 150px;
+    height: 220px;
+    border: 1px solid red;
+    position: relative;
+    perspective: 700px;
+}
+
+.card img {
+    width: 100px;
+}
+.card > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transition: 1s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .front {
+    
+}
+.card .back {
+    transform: rotatey(-180deg);
+    background-color: lightgray;
+}
+.card:hover .back {
+    transform: rotatey(0deg);
+}
+.card:hover .front {
+    transform: rotateY(180deg);
+}
