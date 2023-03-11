@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+}
+legend{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+}
+fieldset{
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+    border-radius: 40px;
+    padding: 40px;
+    background: linear-gradient(to bottom, red, green,yellow);
+}
+form{
+    width: 500px;
+    height: 620px;
+    margin: 0 auto;
+    border: 1px solid black;
+    position: relative;
+}
+#PW, #ID{
+    width: 200px;
+    height: 50px;
+}
+label{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.button_loginpage{
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: blue;
+    color:aqua;
+    position: absolute;
+    bottom: 30px;
+    left:151px;
+}
+.ID_div{
+    position: absolute;
+    top: 250px;
+    left: 110px;
+}
+.PW_div{
+    position: absolute;
+    top: 350px;
+    left: 80px;
+}
+.login_log img{
+    width: 480px;
+    position: absolute;
+    top: 20px;
+}
+input{
+    font-size: 18px;
+}
