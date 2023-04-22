@@ -35,6 +35,7 @@ function select_board_info()
 		." 	,board_title "
 		." 	,board_write_date "
         ."  ,board_contents "
+		."  ,comp_flg "
 		." FROM "
 		." 	board_info "
 		." WHERE "
@@ -118,6 +119,36 @@ $conn->beginTransaction();
 $stmt = $conn->prepare($sql);
 $stmt->execute($arr_prepare);
 $conn->commit();
+}
+
+
+function select_goal_info()
+{
+	$sql =
+		" SELECT "
+		." * "
+		." FROM "
+		." 	goal_info "
+		;
+
+	$conn = null;
+	try
+	{
+		db_con( $conn );
+		$stmt = $conn->prepare( $sql );
+		$stmt->execute();
+		$result = $stmt->fetchAll();
+	}
+	catch( Exception $e )
+	{
+		return $e->getMessage();
+	}
+	finally
+	{
+		$conn = null;
+	}
+
+	return $result[0];
 }
 ?>
 
